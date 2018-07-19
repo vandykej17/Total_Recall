@@ -9,4 +9,9 @@ public class HomeController extends BaseController {
 	public String summary() {
 		return "summary";
 	}
+
+	@GetMapping("/vehicles")
+	public String vehicles() {
+		return "vehicles";
+	}
 }

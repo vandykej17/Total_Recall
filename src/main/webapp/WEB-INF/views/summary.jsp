@@ -218,7 +218,7 @@
 								<div class="nav-options-container__header-container group nw-gcb-dom-control">
 									<div class="header-container__heading">
 										<h2 class="before-sprite header-icon__autoPolicy">
-											<a href="https://myaccount.nationwide.com/myaccount/translate/businessEvent/navigate.do?urlKey=url.insurance.policy-auto-detail&amp;linkName=Policy&amp;pkey=PPNM0064806305&amp;bkey=7279834815&amp;sid=ae47832007a840d8b4327e2d9e26c5e3"
+											<a href="vehicles"
 											   title="" id="Auto_PPNM0064806305">Auto Policy</a>
 										</h2>
 										<span class="header-container__description"> PPNM0064806305
