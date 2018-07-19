@@ -7,13 +7,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatibel" content="IE-edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scable=no">
-	<link rel="stylesheet" href="resources/css/genesys-cobrowse.css" type="text/css">
-	<script src="resources/js/nr-spa-1071.min.js"></script>
-	<script id="genesys-js" src="resources/js/gcb.min.js" data-gcb-url="https://cobrowse.nationwide.com/communication/cobrowse/v1/cobrowse"
-			data-gwc-var="_genesys.chat"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="resources/js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="resources/js/genesys-cobrowse.min.js"></script>
 	<title>
 		All Accounts | Nationwide Online Account Access
 	</title>
@@ -26,10 +21,8 @@
 	<link rel="stylesheet" href="resources/css/main.css" type="text/css" media="screen,print">
 	<link rel="stylesheet" href="resources/css/print.css" type="text/css" media="print">
 	<link rel="stylesheet" href="resources/css/nw-authorization-center.min.css">
-	<script type="text/javascript" src="resources/js/tealeaf5.1.0.w.dom.Sizzle-v1.js"></script>
 	<script src="resources/js/modernizr-2.8.3.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="resources/js/Bootstrap.js"></script>
-	<script type="text/javascript" src="resources/js/uii5kjg.js"></script>
 	<style type="text/css">
 		.tk-proxima-nova {
 			font-family: "proxima-nova", sans-serif;
@@ -85,9 +78,9 @@
 	<script>
 		try {
 			Typekit.load();
-		} catch (e) {}
+		} catch (e) {
+		}
 	</script>
-	<link href="resources/css/genesys-c2chat.css" rel="stylesheet" media="screen,print" type="text/css">
 	<link href="resources/css/jquery-ui-1.11.4.custom.c2chat.css" rel="stylesheet" media="screen,print" type="text/css">
 </head>
 
@@ -95,7 +88,6 @@
 <input type="hidden" id="chatApiKey" value="9qwwxAaBAynEIqNboAiIXOAMZapurgAD">
 <input type="hidden" id="chatBaseUrl" value="https://api.nationwide.com:443/communication/">
 <input type="hidden" id="chatStatsQueueObjectIdSuffix" value="cmh_mcr_link">
-<script src="resources/js/genesys-c2chat.min.js" type="text/javascript"></script>
 <script src="resources/js/jquery-ui-1.11.4.custom.c2chat.min.js" type="text/javascript"></script>
 <script src="resources/js/chat.js" type="text/javascript"></script>
 <a tabindex="1" href="https://myaccount.nationwide.com/myaccount/portfolio/RetrievePortfolio.action#" id="skip-to-main-content"
@@ -112,21 +104,6 @@
 			<button id="timeoutWarningLogout" class="button non-preferred button-margin equal-width button-right">Log Out</button>
 		</div>
 	</div>
-	<!-- CoBrowse js -->
-	<script type="text/javascript" src="resources/js/genesys-cobrowse.min.js"></script>
-	<script type="text/javascript" src="resources/js/cobrowse.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			NIselfService.timeoutWarning.init();
-		});
-		$(document).ready(function (e) {
-			var gcbScriptUrl = "https://media.nationwide.com/misc";
-			var cobrowseUrl = "https://cobrowse.nationwide.com/communication/cobrowse/v1/cobrowse";
-			var cobrowseCssBrowser = "true";
-			var cobrowseDebug = "true";
-			fireEbiForMyContactsWhenClick.init();
-		});
-	</script>
 	<div id="navigationAlertContainer"></div>
 	<div class="outer-container">
 		<nav class="mobile-navigation hide-navigation-bar" id="mobile-navigation-cam" role="navigation">
@@ -468,32 +445,6 @@
 					<a href="https://myaccount.nationwide.com/myaccount/portfolio/RetrievePortfolio.action" id="modalCloseButton" class="button-link preferred right equal-width">Close</a>
 				</div>
 			</div>
-			<script type="text/javascript">
-				$(document).ready(function () {
-					var initialViewType = "personal";
-					NIselfService.chat.init();
-					IncrementalPageLoader.init();
-					if (initialViewType == "commercial") {
-						IncrementalPageLoader.loadAlerts();
-					} else {
-						IncrementalPageLoader.loadAccountSummary();
-					}
-				});
-
-				function updateSession(viewType) {
-					$.ajax({
-						type: "POST",
-						url: "/myaccount/portfolio/UpdateSessionAndPageReload.action",
-						data: {
-							newViewType: viewType
-						},
-						success: function (data, textStatus) {},
-						complete: function (data, textStatus) {
-							window.location.reload(true);
-						}
-					});
-				}
-			</script>
 			<div id="urboNumber" class="urbo">
 				NFW-2020AO.1
 			</div>
@@ -533,7 +484,6 @@
 					<alt alt="fdic" class="icon-sprite icon--fdic" style="border: none;"></alt>
 				</a>
 				<a id="truste" href="https://privacy.truste.com/privacy-seal/validation?rid=33d56fbf-04d6-4530-8bb7-7a7f6bc358db" target="_blank">
-					<img style="border: none;" src="./index_files/seal" alt="TRUSTe">
 				</a>
 			</div>
 			<hr class="main-footer__separator">
@@ -569,9 +519,7 @@
 		</footer>
 		<!-- CAM App Scripts - Preference Center Integration -->
 		<script type="text/javascript" src="resources/js/preferenceCenter.js"></script>
-		<script type="text/javascript" src="resources/js/incrementalPageLoader.js"></script>
 		<script type="text/javascript" src="resources/js/jquery.form.js"></script>
-		<script type="text/javascript" src="resources/js/stdFunctions.js"></script>
 		<script type="text/javascript" src="resources/js/moment.js"></script>
 		<script type="text/javascript" src="resources/js/moment-timezone-with-data.js"></script>
 		<script type="text/javascript" src="resources/js/matchMedia.min.js"></script>
@@ -581,13 +529,11 @@
 		<script type="text/javascript" src="resources/js/jquery.custom.functions.js"></script>
 		<script type="text/javascript" src="resources/js/accordion.js"></script>
 		<script type="text/javascript" src="resources/js/buttonLogic.js"></script>
-		<script type="text/javascript" src="resources/js/profileCompleteness.js"></script>
 		<script type="text/javascript" src="resources/js/toggler.js"></script>
 		<script type="text/javascript" src="resources/js/profile-preferences.js"></script>
 		<script type="text/javascript" src="resources/js/form-errors.js"></script>
 		<script type="text/javascript" src="resources/js/inline-help.js"></script>
 		<script type="text/javascript" src="resources/js/wait-cancel.js"></script>
-		<script type="text/javascript" src="resources/js/timeout.js"></script>
 		<script type="text/javascript" src="resources/js/alerts.js"></script>
 		<script type="text/javascript" src="resources/js/personal-information.js"></script>
 		<script type="text/javascript" src="resources/js/contactUs.js"></script>
