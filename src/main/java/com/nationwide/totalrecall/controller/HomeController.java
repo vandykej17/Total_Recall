@@ -10,4 +10,9 @@ public class HomeController extends BaseController {
 	public String index() {
 		return "home";
 	}
+
+	@GetMapping("/summary")
+	public String summary() {
+		return "summary";
+	}
 }
