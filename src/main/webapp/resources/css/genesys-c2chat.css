@@ -1,0 +1,468 @@
+/* ---- COLORS ------------------
+aqua - 2cdbc5 (hightlights, alternate chat bubble)
+slate blue - 475562 (chat area background)
+light gray -   (chat bubble)
+dark blue - 253646 (chat frame)
+--------------------------------- */
+
+#c2chat *:focus {outline: none}
+#c2chat * {box-sizing:border-box}
+#c2chat a {
+	color:#fff !important;
+ 	text-decoration: underline !important;
+ }
+#c2chat a:hover {color:#2cdbc5 !important;}
+#c2chat hr {border:none;height:1px;background:#999999;margin:10px 0;width:100%}
+#c2chat h1, #c2chat h2, #c2chat h3, #c2chat h4 {font-weight: 500;margin:10px 0;}
+#c2chat h2 {font-size: 1.5em;text-transform: none;line-height: inherit;}
+#c2chat span.ui-icon {display: none}
+#c2chat #accordion {
+	z-index:1000;
+	font-size: 16px;
+	max-height:700px;
+	font-family: "Proxima-Nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	position:fixed;
+	right:20px;
+	bottom: -1px;
+	width:320px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 480px) {
+	/* Styles */
+	#c2chat #accordion {
+		margin:0 auto;
+		right:0;
+		left:0;
+	}
+}
+
+#c2chat input {
+	display:block;
+	padding:4px;
+	margin:5px 0;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #000 !important;
+    height: auto;
+}
+
+#c2chat input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #666 !important;
+	font-style:italic;
+}
+#c2chat input::-moz-placeholder { /* Firefox 19+ */
+	color: #666 !important;
+	font-style:italic;
+}
+#c2chat input:-ms-input-placeholder { /* IE 10+ */
+	color: #666 !important;
+	font-style:italic;
+}
+#c2chat input:-moz-placeholder { /* Firefox 18- */
+	color: #666 !important;
+	font-style:italic;
+} 
+
+#c2chat textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin:10px 0;
+    height:80px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    resize: none;
+    color: #000 !important;
+}
+
+#c2chat textarea[disabled] { 
+	border: 1px solid #aaa;
+	background-color: #ddd; 
+}
+
+#c2chat button {
+	background:transparent;
+}
+
+#c2chat label {
+	color: #fff !important;
+	padding: 0;
+	font-size: inherit;
+	font-weight: normal;
+}
+
+
+/* HEADER BUTTONS */
+
+#c2chat #chat-header.ui-state-default button {
+	color: #2cdbc5;
+}
+
+#c2chat #chat-header.ui-state-active button {
+	color: #ffffff;
+}
+
+#c2chat .end-button,
+#c2chat .done-button {
+    z-index: 10;
+    position: absolute;
+    margin: -55px 0 0 0;
+    text-align: center;
+    width: 75px;
+    height: 55px;
+    border-top: none;
+    border-bottom: none;
+    color:#fff;
+	cursor: pointer;
+}
+
+#c2chat .end-button {
+	display: none;
+	left: 0px;
+	border-left: none;
+	-webkit-border-top-left-radius: 15px;
+	-moz-border-radius-topleft: 15px;
+	border-top-left-radius: 15px;
+	border-right: 1px solid #666;
+}
+
+#c2chat .chatting .end-button {
+	display: block;
+}
+
+#c2chat .done-button {
+	right: 0;
+	border-right: none;
+	-webkit-border-top-right-radius: 15px;
+	-moz-border-radius-topright: 15px;
+	border-top-right-radius: 15px;
+	border-left: 1px solid #666;
+}
+
+#c2chat #chat-header .hide-button {
+	z-index: 10;
+    position: absolute;
+    right: 0;
+    margin: -46px 0 0;
+    width: 75px;
+    height: 55px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: 1px solid #666;
+    text-align: center;
+    -webkit-border-top-right-radius: 15px;
+	-moz-border-radius-topright: 15px;
+	border-top-right-radius: 15px;
+	cursor: pointer;
+}
+
+#c2chat #chat-header .hide-button:hover,
+#c2chat #chat-header .hide-button:focus,
+#c2chat .end-button:hover,
+#c2chat .end-button:focus,
+#c2chat .done-button:hover,
+#c2chat .done-button:focus {
+	background: #475562;
+	color:#2cdbc5
+}
+
+
+/* ACTION BUTTONS */
+
+#c2chat .action button {
+	width:25%;
+	display: inline-block;
+	border: 1px solid #2cdbc5;
+	height:42px;
+	margin:5px;
+	padding:5px;
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color:#fff;
+    font-weight: normal;
+    box-shadow: none;
+}
+
+#c2chat .action button:hover {
+	cursor: pointer;
+	border: 1px solid #ccc;
+}
+
+#c2chat .action .submit, 
+#c2chat .action .send, 
+#c2chat .action .save-button, 
+#c2chat .action .yes-button,
+#c2chat .action .send-survey {
+	float:right;
+}
+
+
+
+
+/* HEADER */
+
+#c2chat #chat-header {
+	z-index:1;
+}
+
+#c2chat .header-info {
+	height: 39px;
+	line-height: 39px;
+}
+
+#c2chat .header-info .logo,
+#c2chat .header-info .c2chat-logo {
+	display: inline-block;
+	background: url(images/c2chat-logo.png) no-repeat;
+	float: right;
+	margin-right: 84px;
+	width: 137px;
+	height: 34px;
+}
+
+#c2chat .ui-accordion-header-active .message-badge {
+	display:none;
+}
+
+#c2chat .message-badge:not(:empty) {
+	display: inline-block;
+	background: #2CDBC5;
+	color: #333;
+    font-size: 0.9em;
+    font-weight: 600;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    left: 35px;
+    position: absolute;
+    top: 15px;
+    z-index:200;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 50%;
+	behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+	animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0.0; }
+}
+
+
+
+/* CONTAINER */
+
+#c2chat .required {font-size:.75em;}
+#c2chat .system-status {font-size:.9em;font-style:italic;color:#92cbc4;display:block;min-height:22px;}
+
+#c2chat #chat-container {
+	height: auto;
+	overflow: hidden;
+}
+#c2chat #chat-container.docked {
+    float: right;
+    margin-top:36px;
+    width: 300px;
+    height:100%;
+    background-color: #111211;
+}
+#c2chat .window {
+	padding:10px;
+	overflow: hidden;
+}
+#c2chat .action {
+	background:#253646;
+	padding:10px;
+	overflow: hidden
+}
+
+#c2chat .widget-error {
+	color: #fff;
+	padding: 5px;
+}
+
+#c2chat .input-error-message {
+	display: inline-block;
+	font-size: 0.75em;
+	margin: 0 0 1px 12px;
+	padding: 1px 6px;
+	text-align: center;
+	border: 1px solid #e85b16;
+	border-radius: 3px;
+}
+
+#c2chat .hidden {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+
+
+/* INITIATION */
+#c2chat .form-input.nickname {
+	margin-bottom: 15px;
+}
+
+#c2chat .form-input.nickname input {
+	width: 183px;
+}
+
+#c2chat .initiation input, 
+#c2chat .initiation textarea {
+	margin: 5px 0;
+}
+
+#c2chat .initiation label {
+	display: inline-block;
+	vertical-align: bottom;
+	margin: 2px 0 0;
+}
+
+
+/* CHAT BOX */
+#c2chat .chatbox .messages { 
+	height:300px;
+	width:100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	position: relative;
+}
+
+#c2chat .chatbox .welcome {
+	font-size: .9em;
+	padding-top: 10px;
+}
+#c2chat .chatbox .welcome div {
+	margin-bottom:10px; 
+	vertical-align:middle;
+}
+
+#c2chat .chatbox .transcript {
+	width:100%;
+	position: relative;
+	padding:0 20px;
+}
+
+#c2chat .chatbox .transcript .system p, 
+#c2chat .chatbox .note {
+	font-size:.75em;
+	font-style: italic;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	vertical-align: middle;
+	line-height: inherit;
+	color: inherit;
+}
+
+#c2chat .chatbox .transcript .them,
+#c2chat .chatbox .transcript .you {
+	margin-bottom: 10px;
+}
+
+#c2chat .chatbox .transcript .them p, 
+#c2chat .chatbox .transcript .you p {
+	background:#d1d1d1;
+	margin: 0;
+	padding:15px;
+	width:auto;
+	max-width:75%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color:#333;
+	word-wrap: break-word;
+	font-size: inherit;
+}
+
+#c2chat .chatbox .transcript .you p {
+	background:#92cbc4;
+	position: relative;
+	margin-left:88px;
+}
+
+#c2chat .chatbox .transcript .name { 
+	display: block;
+    clear: both;
+    text-align: left;
+    color: #fff;
+    word-wrap: break-word;
+}
+
+#c2chat .chatbox .transcript .system .name {
+	display: none;
+}
+
+#c2chat .chatbox .transcript .you .name { 
+	text-align: right;
+}
+
+#c2chat .chatbox .transcript a {
+	color:#333 !important;
+ 	text-decoration: underline !important;
+}
+
+#c2chat .chatbox .action .flipper {
+	height: 157px;
+}
+
+#c2chat .chatbox .action .email-button {
+	display: inline-block;
+  	background: url(images/c2chat-email.png) no-repeat;
+  	width: 180px;
+  	height: 46px;
+  	text-align: left;
+  	padding-left: 46px;
+  	border: none;
+}
+
+#c2chat .chatbox .action .email-button:hover,
+#c2chat .chatbox .action .email-button.ui-button-disabled {
+	cursor: pointer;
+	background: url(images/c2chat-email-off.png) no-repeat;
+	border: none;
+}
+
+#c2chat .chatbox .action .email-button-caption {
+	vertical-align: -6px;
+}
+
+#c2chat .chatbox .action .email-field {
+	width:100%;
+}
+
+#c2chat .chatbox .action .email .notif {
+	display: inline-block;
+	min-height: 20px;
+	margin-left: 0;
+	margin-bottom: 19px;
+	font-size: 12px;
+}
+
+#c2chat .chatbox .action .email .notif.input-error-message {
+	margin-top: 3px;
+	margin-bottom: 21px;
+}
+
+
+
+/* SURVEY */
+#c2chat .survey {
+	height: 500px;
+}
