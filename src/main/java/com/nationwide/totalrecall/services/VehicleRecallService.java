@@ -25,7 +25,7 @@ public class VehicleRecallService {
 	}
 
 	public List<VehicleRecalls> getRecallsByPolicyNumber(String policyNumber) {
-		return vehicleRecallRepository.findAllByPolicyNumber(policyNumber);
+		return vehicleRecallRepository.findAllByPolicyNumberAndMessage(policyNumber, "Unknown");
 	}
 
 	public void updateUserVehicleRecallById(Integer vehicleRecallId, Integer statusId) {
