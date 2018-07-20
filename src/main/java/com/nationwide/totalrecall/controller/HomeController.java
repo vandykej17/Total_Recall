@@ -1,5 +1,6 @@
 package com.nationwide.totalrecall.controller;
 
+import com.nationwide.totalrecall.service.RecallService;
 import com.nationwide.totalrecall.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,6 +16,7 @@ public class HomeController extends BaseController {
 	UsersService userService;
 
 	@Autowired
+	RecallService recallService;
 
 
 	@GetMapping("/")
@@ -38,8 +40,8 @@ public class HomeController extends BaseController {
 	@GetMapping("/getRecall/{policyNumber}")
 	public ModelAndView getRecallsByPolicyNumber(@PathVariable(name = "policyNumber") String policyNumber) {
 		ModelAndView mav = new ModelAndView();
-		mav.addObject("Users", userService.getUser());
-		mav.setViewName("home");
+		mav.addObject("Users", recallService.getRecallsByPolicyNumber(policyNumber));
+		mav.setViewName("recalls");
 		return mav;
 	}
 }
