@@ -5,6 +5,8 @@ import com.nationwide.totalrecall.repository.IVehicleRecallRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class VehicleRecallService {
 
@@ -15,7 +17,7 @@ public class VehicleRecallService {
 		this.vehicleRecallRepository = vehicleRecallRepository;
 	}
 
-	public VehicleRecalls getRecallsByPolicyNumber(String policyNumber) {
+	public List<VehicleRecalls> getRecallsByPolicyNumber(String policyNumber) {
 		return vehicleRecallRepository.findAllByPolicyNumber(policyNumber);
 	}
 }

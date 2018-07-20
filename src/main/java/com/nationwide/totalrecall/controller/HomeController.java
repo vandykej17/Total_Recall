@@ -34,11 +34,4 @@ public class HomeController extends BaseController {
 		return "vehicles";
 	}
 
-	@GetMapping("/getRecalls/{policyNumber}")
-	public ModelAndView getRecallsByPolicyNumber(@PathVariable(name = "policyNumber") String policyNumber) {
-		ModelAndView mav = new ModelAndView();
-		mav.addObject("Recalls", vehicleRecallService.getRecallsByPolicyNumber(policyNumber));
-		mav.setViewName("recalls");
-		return mav;
-	}
 }
