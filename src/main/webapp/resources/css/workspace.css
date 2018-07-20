@@ -1,0 +1,147 @@
+/*application specific*/
+.unreadNotification {
+    font-weight:bold;
+}
+.readNotification {
+    font-weight:normal;
+    background-color:#efefef;
+}
+.badges {
+    position:absolute;
+    right:5px;
+    top:5px;
+    border-radius:10px;
+    background-color:#efefef;
+    padding:3px;
+}
+.badge {
+    float:right;
+    clear:right;
+    font-weight:normal !important;
+    width:100%;
+}
+.badge.critical {
+    background-color:#ff0000;
+}
+.badge.unread + .badge {
+    margin-top:3px;
+}
+.ion-alert {
+    color:#ff0000;
+}
+
+@media screen and (max-width: 992px) {
+    .badge.critical {
+        right:10px;
+    }
+    .panel a i {
+        display:none;
+    }
+    .badges {
+        position:relative;
+        float:right;
+        top:0px;
+        right:0px;
+    }
+    .panel-heading .badge {
+        clear:none;
+        margin-top:-1px !important;
+        width:auto;
+        padding:2px 6px;
+    }
+    .panel-heading .badge + .badge {
+        margin-right:5px !important;
+    }
+}
+/* BEGIN SVG ICON SPRITE CSS */
+.icons {
+    display: inline-block;
+    width:37px;
+    height:32px;
+    overflow: hidden;
+    background-size:752px 32px;
+    background-repeat: no-repeat;
+    background-image: url(WS-icons-sprite.png);
+    background-image:
+            linear-gradient(transparent, transparent),
+            url(WS-icons-sprite.svg);
+}
+.btn-primary .icons{
+    background-image: url(WS-icons-sprite-white.png);
+    background-image:
+            linear-gradient(transparent, transparent),
+            url(WS-icons-sprite-white.svg);
+}
+ul.nav-tabs li a .icons{
+    background-image: url(WS-icons-sprite-link.png);
+    background-image:
+            linear-gradient(transparent, transparent),
+            url(WS-icons-sprite-link.svg);
+}
+ul.nav-tabs li a:hover .icons,
+ul.nav-tabs li a:focus .icons{
+    background-image: url(WS-icons-sprite-hover.png);
+    background-image:
+            linear-gradient(transparent, transparent),
+            url(WS-icons-sprite-hover.svg);
+}
+ul.nav-tabs li.active a .icons,
+ul.nav-tabs li.active a:hover .icons,
+ul.nav-tabs li.active a:focus .icons{
+    background-image: url(WS-icons-sprite.png);
+    background-image:
+            linear-gradient(transparent, transparent),
+            url(WS-icons-sprite.svg);
+}
+.icons.icon-cash {background-position: 0 0;}
+.icons.icon-clock {background-position: -48px 0;}
+.icons.icon-document-text {background-position: -96px 0;}
+.icons.icon-email {background-position: -144px 0;}
+.icons.icon-model-s {background-position: -192px 0;}
+.icons.icon-settings {background-position: -240px 0;}
+.icons.icon-university {background-position: -288px 0;}
+/* END SVG ICON SPRITE CSS */
+
+
+
+/* BEGIN SVG ICON SPRITE TAB CSS */
+.icon-tabs > .nav-tabs > li > a { padding:10px 20px;}
+.icon-tabs .icons {font-size:30px; display:block; margin:0 auto 5px auto;}
+.icon-tabs .tab-title {display:block;}
+/* END SVG ICON SPRITE TAB CSS */
+
+
+
+@media screen and (max-width: 992px) {
+    .icon-tabs .icons {display: none;}
+    .icon-tabs .tab-title{display: inline-block;}
+}
+
+.loading-container {
+    background-color:#fff;
+    position:relative;
+    height:140px;
+    text-align:center;
+    padding-top:80px;
+}
+.loading-container .spinner {
+    top:30% !important;
+}
+
+.personalLinesActivitiesTabList, .commercialLinesActivitiesTabList{
+    width:20% !important;
+}
+
+.policyActivitiesTable{
+    min-height:409px;
+    width: 80% !important;
+}
+
+.commercialActivitiesTable {
+    width: 80% !important;
+}
+
+.modal-image {
+	width:100% !important;
+	height:auto !important;
+}

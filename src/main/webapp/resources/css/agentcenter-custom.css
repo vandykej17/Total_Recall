@@ -1,0 +1,112 @@
+.btn-group .btn.btn-neutral,
+.btn-group .btn.btn-default{
+	color: rgba(35, 108, 204, .85);
+}
+.btn-group .btn.btn-neutral.active,
+.btn-group .btn.btn-neutral:active,
+.btn-group .btn.btn-neutral.active:hover,
+.btn-group .btn.btn-neutral.active:focus,
+.btn-group .btn.btn-default.active,
+.btn-group .btn.btn-default:active,
+.btn-group .btn.btn-default.active:hover,
+.btn-group .btn.btn-default.active:focus{
+	background-color:#888 !important;
+	color:#fff !important;
+	border-color:#666 !important;
+}
+
+/* @GROUP Toggle Styling */
+.toggle.btn-default,
+.toggle.btn-neutral{
+	border-color:#666 !important;
+}
+.toggle.btn-default:hover,
+.toggle.btn-default:focus,
+.toggle.btn-neutral:hover,
+.toggle.btn-neutral:focus{
+	border-color:#444 !important;
+}
+.toggle.btn-default.off,
+.toggle.btn-neutral.off{
+	border-color:#ccc !important;
+}
+.dark-bg .toggle.btn-default.off,
+.dark-bg .toggle.btn-neutral.off{
+	border-color: rgba(255, 255, 255, .4) !important;
+	background-color:transparent !important;
+}
+.toggle.btn-default.off:hover,
+.toggle.btn-default.off:focus,
+.toggle.btn-neutral.off:hover,
+.toggle.btn-neutral.off:focus{
+	border-color:#acacac !important;
+}
+.toggle.btn-default.off .btn-default.active.toggle-off,
+.toggle.btn-neutral.off .btn-neutral.active.toggle-off{
+	color: rgba(35, 108, 204, .75) !important;
+	background-color:#eee !important;
+}
+.toggle.btn-default.off .btn-default.active.toggle-off:hover,
+.toggle.btn-default.off .btn-default.active.toggle-off:focus,
+.toggle.btn-neutral.off .btn-neutral.active.toggle-off:hover,
+.toggle.btn-neutral.off .btn-neutral.active.toggle-off:focus{
+	color: #002945 !important;
+	background-color:#f1f1f1 !important;
+	border-color:#acacac !important;
+}
+.dark-bg .toggle.btn-default.off .btn-default.active.toggle-off,
+.dark-bg .toggle.btn-neutral.off .btn-neutral.active.toggle-off{
+	background-color: rgba(255, 255, 255, .2) !important;
+	border-color: rgba(255, 255, 255, .4) !important;
+	color: rgba(255, 255, 255, .9) !important;
+}
+.dark-bg .toggle.btn-default.off .btn-default.active.toggle-off:hover,
+.dark-bg .toggle.btn-default.off .btn-default.active.toggle-off:focus,
+.dark-bg .toggle.btn-neutral.off .btn-neutral.active.toggle-off:hover,
+.dark-bg .toggle.btn-neutral.off .btn-neutral.active.toggle-off:focus{
+	color:#fff !important;
+	background-color:rgba(255, 255, 255, .4) !important;
+	border-color:rgba(255, 255, 255, .75) !important;
+}
+.toggle.btn-default .btn.btn-default.toggle-on,
+.toggle.btn-default .btn.btn-neutral.toggle-on{
+	color:#fff !important;
+	background-color:#888 !important;
+	border-color:#666 !important;
+}
+.toggle.btn-default .btn.btn-default.toggle-on:hover,
+.toggle.btn-default .btn.btn-default.toggle-on:focus,
+.toggle.btn-neutral .btn.btn-neutral.toggle-on:hover,
+.toggle.btn-neutral .btn.btn-neutral.toggle-on:focus{
+	color:#fff !important;
+	background-color:#777 !important;
+	border-color:#333 !important;
+}
+.dark-bg .toggle.btn-default .btn.btn-default.toggle-on,
+.dark-bg .toggle.btn-neutral .btn.btn-neutral.toggle-on{
+	color:#0D284B !important;
+	background-color: rgba(255, 255, 255, .85) !important;
+	border-color: #fff !important;
+}
+.dark-bg .toggle.btn-default .btn.btn-default.toggle-on:hover,
+.dark-bg .toggle.btn-default .btn.btn-default.toggle-on:focus,
+.dark-bg .toggle.btn-neutral .btn.btn-neutral.toggle-on:hover,
+.dark-bg .toggle.btn-neutral .btn.btn-neutral.toggle-on:focus{
+	color:#0D284B !important;
+	background-color: rgba(255, 255, 255, .85) !important;
+	border-color: #fff !important;
+}
+.dark-bg .toggle-handle.btn.btn-default,
+.dark-bg .toggle-handle.btn.btn-neutral{
+	background-color:#fff !important;
+	border-color:rgba(0, 0, 0, .2) !important;
+}
+.dark-bg .toggle-handle.btn.btn-default:hover,
+.dark-bg .toggle-handle.btn.btn-default:focus,
+.dark-bg .toggle-handle.btn.btn-neutral:hover,
+.dark-bg .toggle-handle.btn.btn-neutral:focus{
+	background-color:#fff !important;
+	border-color:rgba(0, 0, 0, .4) !important;
+}
+/* @END */
+

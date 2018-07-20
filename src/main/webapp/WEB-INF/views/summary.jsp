@@ -17,9 +17,9 @@
 	<meta name="userID" content="0051946950">
 	<meta name="userType" content="[PNO]">
 	<meta name="description" content="">
-	<link rel="stylesheet" href="resources/css/nw-authorization-center.min.css">
-	<link rel="stylesheet" href="resources/css/bootstrap-3.1/bootstrap.css"/>
-	<link rel="stylesheet" href="resources/css/themes/ui-framework-theme.css"/>
+	<link rel="stylesheet" href="resources/css/nw-authorization-center.min.css" type="text/css">
+	<link rel="stylesheet" href="resources/css/bootstrap-3.1/bootstrap.css" type="text/css"/>
+	<link rel="stylesheet" href="resources/css/themes/ui-framework-theme.css" type="text/css"/>
 	<link rel="stylesheet" href="resources/css/main.css" type="text/css" media="screen,print">
 	<link rel="stylesheet" href="resources/css/print.css" type="text/css" media="print">
 	<script src="resources/js/modernizr-2.8.3.min.js" type="text/javascript"></script>
@@ -205,7 +205,7 @@
 						</div>
 						<div class="insuranceHeader" id="insuranceHeader"></div>
 						<div id="insurance">
-							<div id="headerInfo" class="alert alert-warning">You has the recall</div>
+							<div id="headerInfo" class="alert alert-warning">You has the recall <a href="https://www.chevrolet.com/dealer-locator#?searchTerm=50391&searchType=postalCode" target="_blank">Find your closest dealer</a></div>
 
 							<div class="nav-options-container-no-margin-top nw-gcb-dom-control">
 								<div class="nav-options-container__header-container group nw-gcb-dom-control">
