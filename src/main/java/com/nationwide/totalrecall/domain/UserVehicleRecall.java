@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Table(name = "user_vehicle_recall")
 public class UserVehicleRecall {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
 	@Column(name = "user_vehicle_id")
@@ -18,7 +18,6 @@ public class UserVehicleRecall {
 	@Column(name = "recall_id")
 	private Integer recallId;
 
-	@ManyToOne
-	@JoinColumn(name = "status_id")
+	@Column(name = "status_id")
 	private Integer statusId;
 }

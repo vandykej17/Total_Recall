@@ -1,6 +1,7 @@
 package com.nationwide.totalrecall.domain;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "Vehicle")
@@ -15,6 +16,9 @@ public class Vehicle {
 	private String model;
 	@Column(nullable = false)
 	private String year;
+
+	@OneToMany(mappedBy = "vehicle")
+	private List<Recall> recalls;
 
 	public Integer getId() {
 		return id;
@@ -46,5 +50,13 @@ public class Vehicle {
 
 	public void setYear(String year) {
 		this.year = year;
+	}
+
+	public List<Recall> getRecalls() {
+		return recalls;
+	}
+
+	public void setRecalls(List<Recall> recalls) {
+		this.recalls = recalls;
 	}
 }

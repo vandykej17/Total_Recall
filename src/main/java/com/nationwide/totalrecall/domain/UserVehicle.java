@@ -18,7 +18,7 @@ public class UserVehicle {
 	@Column(nullable = false)
 	private String vin;
 
-	@Column(nullable = false, name = "policy_number")
+	@Column(nullable = false, name = "policynumber")
 	private String policyNumber;
 
 	public Integer getId() {
