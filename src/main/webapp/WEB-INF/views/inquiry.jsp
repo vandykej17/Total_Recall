@@ -11,8 +11,41 @@
 	<link rel="stylesheet" href="resources/css/application.css"/>
 	<link rel="stylesheet" href="resources/css/bootstrap-toggle.css"/>
 	<link rel="stylesheet" href="resources/css/agentcenter-custom.css"/>
+	<script type="text/javascript" src="resources/js/jquery-1.8.3.min.js"></script>
 
 	<link rel="stylesheet" href="resources/css/workspace.css">
+	<script type="text/javascript" src="resources/js/modernizr-2.7.1.min.js"></script>
+	<script type="text/javascript" src="resources/js/jquery.custom.functions.js"></script>
+	<script type="text/javascript" src="resources/js/forms.js"></script>
+	<script type="text/javascript" src="resources/js/toggler.jquery.js"></script>
+	<script type="text/javascript" src="resources/js/owl.carousel.js"></script>
+	<script type="text/javascript" src="resources/js/coverages-picker.jquery.js"></script>
+	<script type="text/javascript" src="resources/js/tabs.js"></script>
+	<script type="text/javascript" src="resources/js/wait-cancel.js"></script>
+	<script type="text/javascript" src="resources/js/edit-history.jquery.js"></script>
+	<script type="text/javascript" src="resources/js/editCoverages.js"></script>
+	<script type="text/javascript" src="resources/js/inline-help.js"></script>
+	<script type="text/javascript" src="resources/js/persist.min.js"></script>
+	<script type="text/javascript" src="resources/js/propertyCoveragesEBI.js"></script>
+	<script type="text/javascript" src="resources/js/accordion.js"></script>
+	<script type="text/javascript" src="resources/js/nwjs.global.js"></script>
+	<script type="text/javascript" src="resources/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="resources/js/ip.js"></script>
+	<script type="text/javascript" src="resources/js/nwjs.coverages.js"></script>
+	<script type="text/javascript" src="resources/js/jquery-ui-1.11.4.custom.c2chat.min.js"></script>
+	<script type="text/javascript" src="resources/js/moment.min.js"></script>
+	<script type="text/javascript" src="resources/js/moment-timezone-with-data.min.js"></script>
+	<script type="text/javascript" src="resources/js/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="resources/js/matchMedia.min.js"></script>
+	<script type="text/javascript" src="resources/js/matchMedia.addListener.min.js"></script>
+	<script type="text/javascript" src="resources/js/billingCommon.js"></script>
+	<script type="text/javascript" src="resources/js/billsAndPayments.js"></script>
+	<script type="text/javascript" src="resources/js/enquire-2.1.0.min.js"></script>
+	<script type="text/javascript" src="resources/js/rvOverview.js"></script>
+	<script type="text/javascript" src="resources/js/rvEBIEvents.js"></script>
+	<script type="text/javascript" src="resources/js/boatOverview.js"></script>
+	<script type="text/javascript" src="resources/js/boatEBIEvents.js"></script>
+	<script type="text/javascript" src="resources/js/mcEBIEvents.js"></script>
 </head>
 
 <body style="padding-top: 127px;" class="">
@@ -37,11 +70,11 @@
 							<li class="utility-link"><a href="javascript:window.print();">Print</a></li>
 
 
-							<li class="utility-link"><a href="#" onclick="loadHelp(&quot;client&quot;, &quot;false&quot;);">Help</a>
+							<li class="utility-link"><a href="#">Help</a>
 							</li>
 
 
-							<li class="utility-link"><a href="#" onclick="closeWindow(&quot;client&quot;);">Close</a>
+							<li class="utility-link"><a href="#">Close</a>
 							</li>
 
 
@@ -188,7 +221,7 @@
 					</table>
 
 				</div>
-				<div class="tab-pane fade in active" id="client">
+				<div class="tab-pane fade in active" id="recallInfo">
 
 
 					<h1 class="page-header">Recall Information</h1>
@@ -281,7 +314,7 @@
 						</div>
 					</div>
 
-					<div id="clientInformationRow">
+					<div id="recallSection" class="hidden">
 
 						<div class="row">
 							<div class="col-xs-12">
@@ -291,20 +324,16 @@
 									</div>
 
 									<div class="panel-body">
-										<table class="table table-striped">
+										<table class="table table-striped" id="recallTable">
 											<thead>
 											<tr>
 												<th>Year/Make/Model</th>
 												<th>Vin</th>
+												<th>Recall Message</th>
+												<th>Acknowledge</th>
 											</tr>
 											</thead>
 											<tbody>
-
-											<tr>
-												<td>2012 Ford F150</td>
-												<td>N/A</td>
-											</tr>
-
 											</tbody>
 										</table>
 									</div>
@@ -317,4 +346,48 @@
 		</div>
 	</div>
 </div>
-</body></html>
+</body>
+
+<script>
+	var policyNumber = 'PPNM0064806423';
+	var numRecalls = 0;
+	var acknowledgedRecalls = 1;
+	$.ajax({
+		url: 'getRecalls/' + policyNumber,
+		type: 'GET',
+		dataType: 'json',
+		success: function (data) {
+			$.each(data, function (index, value) {
+				var theDatas = data[index];
+				console.log(theDatas);
+				$('#recallTable > tbody:last-child').append('<tr id="recallRow' +theDatas['userVehicleRecallId']+ '"><td>' + theDatas['year'] + ' ' + theDatas['make'] + ' ' + theDatas['model'] +
+						'</td><td>'+theDatas['vin'] + '</td><td>' + theDatas['reason'] + '</td><td>' + '<button id="' + theDatas['userVehicleRecallId'] +
+						'" type="submit" onclick="acknowledgeRecall(' + theDatas['userVehicleRecallId'] + ')" class="btn-primary btn-lg">Acknowledge</button>' +
+						'</td></tr>');
+				numRecalls++;
+			});
+
+			if (numRecalls) {
+				$('#recallSection').removeClass('hidden');
+			}
+
+		}
+	});
+
+	function acknowledgeRecall(vehicleRecallId) {
+		$.ajax({
+			url: 'updateUserVehicleRecallById/' + vehicleRecallId + '/2',
+			type: 'GET',
+			dataType: 'json',
+			success: function (data) {
+				$('#recallRow' + vehicleRecallId).remove();
+				acknowledgedRecalls++;
+			}
+		});
+		console.log([acknowledgedRecalls, numRecalls]);
+		if (acknowledgedRecalls === numRecalls) {
+			$('#recallSection').addClass('hidden');
+		}
+	}
+</script>
+</html>
