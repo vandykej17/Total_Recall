@@ -95,16 +95,6 @@
    class="hidden">Skip to main content</a>
 <a name="top"></a>
 <div class="global-container">
-	<div role="alert" aria-live="assertive" class="message-container message-container--modal message-container--closeable message-container--warning message-container--twobutton group"
-		 id="timeoutWarning" tabindex="-1">
-		<div class="before-sprite">
-			For your security, your Nationwide online session will expire in approximately 3 minutes. What would you like to do?
-		</div>
-		<div class="message-container__buttons nw-gcb-dom-control">
-			<button id="timeoutWarningContinue" class="button preferred equal-width button-right">Keep Working</button>
-			<button id="timeoutWarningLogout" class="button non-preferred button-margin equal-width button-right">Log Out</button>
-		</div>
-	</div>
 	<div id="navigationAlertContainer"></div>
 	<div class="outer-container">
 		<nav class="mobile-navigation hide-navigation-bar" id="mobile-navigation-cam" role="navigation">
