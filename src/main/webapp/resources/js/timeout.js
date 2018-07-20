@@ -111,19 +111,19 @@ function initSessionMonitor() {
 	sessClearInterval();
 	sessSetInterval();
 
-/*	
- * This code is used for mouse move and key press. 
- * Currently there is now requirement for this but 
+/*
+ * This code is used for mouse move and key press.
+ * Currently there is now requirement for this but
  * we have just added here for future use for this code.
- * 
+ *
  * $(this).mousemove(function(e) {
 		if(!timeoutPopUpShown) {
-			sessKeyPressed(e);	
+			sessKeyPressed(e);
 		}
 	});
 	$(this).keypress(function(e) {
 		if(!timeoutPopUpShown) {
-			sessKeyPressed(e);	
+			sessKeyPressed(e);
 		}
 	});*/
 }
@@ -139,13 +139,13 @@ function sessKeyPressed(e) {
 }
 
 function sessInterval() {
-	var now = new Date();	
+	var now = new Date();
 	// get milliseconds of differences
-	var diff = now - sess_lastActivity;	
+	var diff = now - sess_lastActivity;
 	// get minutes between differences
 	var diffMins = (diff / 1000 / 60);
 	if (diffMins >= sess_warningMinutes) {
-		if (diffMins >= sess_expirationMinutes) {		
+		if (diffMins >= sess_expirationMinutes) {
 			$("#screenExit").val("exit");
 			if(typeof uploadInProgress != "undefined")
 			{
@@ -155,8 +155,7 @@ function sessInterval() {
 			{
 				c2chat.cleanChatSessionData();
 			}
-			
-			window.location.href = 'sessionExpired.action';
+
 		} else {
 			// warn before expiring. Stop the timer. Prompt for attention
 			//sessClearInterval();
@@ -174,7 +173,7 @@ function sessInterval() {
 				document.body.scrollTop = document.documentElement.scrollTop = 0;
 				$('#timeoutWarning').keydown(function(e) {
 					NIselfService.timeoutWarning.trapTabKey($(this), e);
-				});	
+				});
 				timeoutPopUpShown = true;
 			}
 		}

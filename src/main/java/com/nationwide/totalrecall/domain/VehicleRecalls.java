@@ -20,5 +20,7 @@ public class VehicleRecalls {
 	private String model;
 	private String reason;
 	private String message;
+
+	@Column(name="policynumber")
 	private String policyNumber;
 }
