@@ -5,7 +5,6 @@ import com.nationwide.totalrecall.services.VehicleRecallService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController extends BaseController {
@@ -16,14 +15,6 @@ public class HomeController extends BaseController {
 	VehicleRecallService vehicleRecallService;
 
 	@GetMapping("/")
-	public ModelAndView index() {
-		ModelAndView mav = new ModelAndView();
-		mav.addObject("Users", userService.getUser());
-		mav.setViewName("home");
-		return mav;
-	}
-
-	@GetMapping("/summary")
 	public String summary() {
 		return "summary";
 	}
@@ -38,4 +29,8 @@ public class HomeController extends BaseController {
 		return "inquiry";
 	}
 
+	@GetMapping("/email")
+	public String email() {
+		return "email";
+	}
 }
