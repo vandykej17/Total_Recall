@@ -38,7 +38,6 @@
 	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="editCoverages" src="resources/js/editCoverages.js"></script>
 	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="inline-help" src="resources/js/inline-help.js"></script>
 	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="persist.min" src="resources/js/persist.min.js"></script>
-	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="timeout" src="resources/js/timeout.js"></script>
 	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="propertyCoveragesEBI" src="resources/js/propertyCoveragesEBI.js"></script>
 	<style type="text/css">
 		#oo_invitation_company_logo img#oo_waypoint_company_logo img {
