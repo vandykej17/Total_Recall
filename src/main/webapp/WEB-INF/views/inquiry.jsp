@@ -336,6 +336,7 @@
 											<tbody>
 											</tbody>
 										</table>
+										<a href="https://www.chevrolet.com/dealer-locator#?searchTerm=50391&searchType=postalCode" target="_blank">Find your nearest service center</a>
 									</div>
 								</div>
 							</div>
