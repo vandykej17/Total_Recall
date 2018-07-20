@@ -17,10 +17,11 @@
 	<meta name="userID" content="0051946950">
 	<meta name="userType" content="[PNO]">
 	<meta name="description" content="">
-	<link rel="stylesheet" href="resources/css/nw-preference-center.min.css" media="screen,print">
+	<link rel="stylesheet" href="resources/css/nw-authorization-center.min.css">
+	<link rel="stylesheet" href="resources/css/bootstrap-3.1/bootstrap.css"/>
+	<link rel="stylesheet" href="resources/css/themes/ui-framework-theme.css"/>
 	<link rel="stylesheet" href="resources/css/main.css" type="text/css" media="screen,print">
 	<link rel="stylesheet" href="resources/css/print.css" type="text/css" media="print">
-	<link rel="stylesheet" href="resources/css/nw-authorization-center.min.css">
 	<script src="resources/js/modernizr-2.8.3.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="resources/js/Bootstrap.js"></script>
 	<style type="text/css">
@@ -214,6 +215,8 @@
 						</div>
 						<div class="insuranceHeader" id="insuranceHeader"></div>
 						<div id="insurance">
+							<div id="headerInfo" class="alert alert-warning">You has the recall</div>
+
 							<div class="nav-options-container-no-margin-top nw-gcb-dom-control">
 								<div class="nav-options-container__header-container group nw-gcb-dom-control">
 									<div class="header-container__heading">
@@ -230,6 +233,7 @@
                                             </span>
 									</div>
 								</div>
+
 								<div class="clear nw-gcb-dom-control"></div>
 								<div class="nav-options__buttons group nw-gcb-dom-control">
 									<a aria-describedby="Auto_PPNM1234567890" id="idCardsDoc_PPNM1234567890" href="https://myaccount.nationwide.com/myaccount/translate/businessEvent/navigate.do?urlKey=url.docbunker&amp;pkey=PPNM1234567890&amp;linkName=idCardsDocuments&amp;isFromOriginalRequest=true"
