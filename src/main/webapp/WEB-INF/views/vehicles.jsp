@@ -605,10 +605,12 @@ NREUM.info = {"applicationID": "22459496", "applicationTime": 2627, "atts": "Q0R
 			var message = '';
 			$.each(data, function (index, value) {
 				var theDatas = data[index];
-				console.log(theDatas);
 				message += '<div id="recallDiv' + theDatas['userVehicleRecallId'] + '" class="nav-options__buttons group">';
 				message += '<div class="recallContent">Your ' + theDatas['year'] + ' ' + theDatas['make'] + ' ' + theDatas['model'] + ' has a recall for: ' + theDatas['reason'];
 				message += '</div><button id="' + theDatas['userVehicleRecallId'] + '" type="submit" onclick="acknowledgeRecall(' + theDatas['userVehicleRecallId'] + ')" class="button preferred equal-width button-right">Acknowledge</button></div>';
+				if(index < data.length - 1) {
+					message += '<hr/>';
+				}
 				numRecalls++;
 			});
 
