@@ -62,11 +62,11 @@ Authors: Eric Wagner, Adam Kerr, James Henry
 
 
 	1. Custom Mixins
-	
+
 	2. Bootstrap Components
-		
+
 		2.1 Buttons 		- Added Neutral, Primary, Secondary and Negative button classes.
-		2.2 Tables 			- 
+		2.2 Tables 			-
 		2.3 Forms				-
 		2.4 Modals 			-
 		2.5 Navigation	-
@@ -74,7 +74,7 @@ Authors: Eric Wagner, Adam Kerr, James Henry
 		2.7 Typography	-
 		2.8 Tabs				-
 		2.9 Alerts			- Overwite list padding inside alerts
-			
+
 	3. Custom Components
 		3.1 Table Sorter
 		3.2 Typeahead
@@ -87,17 +87,17 @@ Authors: Eric Wagner, Adam Kerr, James Henry
 		3.9 Vertical Tabs
 		4.0 Megamenu
 
-	
+
 -------------------------------------------------------------------*/
-/* 
+/*
 1. Custom Mixins
 =============================================================================================
 ==========================================================================================-*/
-/* 
+/*
 2. Extended Components
 =============================================================================================
 ==========================================================================================-*/
-/* 
+/*
 2.1 Buttons -------------------------------------*/
 .btn:hover, .btn:focus {
   color: #fff;
@@ -131,7 +131,7 @@ Authors: Eric Wagner, Adam Kerr, James Henry
     color: #e4e4e4;
     background-color: #005691; }
 
-/* 
+/*
 2.2 Tables -------------------------------------*/
 .table-col-actions .dropdown-menu {
   text-align: left;
@@ -304,7 +304,7 @@ Authors: Eric Wagner, Adam Kerr, James Henry
 .table > tbody > tr > td > .table > tbody > tr > td .table > tbody > tr > td.refer {
   width: 18.7%; }
 
-/* 
+/*
 2.3  Forms --------------------------------------*/
 .label-unbold {
   font-weight: normal; }
@@ -487,7 +487,7 @@ legend + .radio-inline {
 .has-info .input-group-btn .btn {
   border: 1px solid #21668c; }
 
-/* 
+/*
 2.4 Modals -------------------------------------*/
 /*
 .modal{
@@ -514,7 +514,7 @@ legend + .radio-inline {
     width: 600px;
     z-index: 1060; }
 
-/* 
+/*
 2.5  Navigation ---------------------------------*/
 .navbar {
   -webkit-border-radius: 0;
@@ -544,7 +544,7 @@ legend + .radio-inline {
 .navbar-right li a {
   padding: 7px !important; }
 
-/* 
+/*
 2.6  Icons ---------------------------------*/
 /*!
  *
@@ -1296,7 +1296,7 @@ a[class^="field-message"] {
   padding-top: 3px;
   padding-bottom: 3px; }
 
-/* 
+/*
 2.7  Typography ---------------------------------*/
 .tab-pane h1:first-child,
 .tab-pane h2:first-child,
@@ -1306,7 +1306,7 @@ a[class^="field-message"] {
 .page-header {
   margin: 20px 0; }
 
-/* 
+/*
 2.8  Tabs ---------------------------------*/
 .tab-content-bordered {
   border-left: 1px solid #cbcbcb;
@@ -1314,16 +1314,16 @@ a[class^="field-message"] {
   border-bottom: 1px solid #cbcbcb;
   padding: 20px 15px 0 15px; }
 
-/* 
+/*
 2.9  Alerts ---------------------------------*/
 .alert ul, .alert ol {
   padding-left: 16px; }
 
-/* 
+/*
 3. Custom Components
 =============================================================================================
 ==========================================================================================-*/
-/* 
+/*
 3.1 Sortable Tables --------------------------------------*/
 /*------------------------------------------------------------------
 Tablesorter jquery plugin
@@ -1373,7 +1373,7 @@ table.tablesorter .table-col-numeric.tablesorter-header {
 .tablesorter > thead > tr > th {
   vertical-align: middle; }
 
-/* 
+/*
 3.2 Typeahead --------------------------------------*/
 /* Typeahead
 ---------------------------------------------------- */
@@ -1463,7 +1463,7 @@ table.tablesorter .table-col-numeric.tablesorter-header {
   border-top: 1px solid #d8d8d8;
   color: #999; }
 
-/* 
+/*
 3.3 Utility Classes --------------------------------------*/
 .width-auto {
   width: auto; }
@@ -1477,7 +1477,7 @@ table.tablesorter .table-col-numeric.tablesorter-header {
 .base-margin-bottom {
   margin-bottom: 15px; }
 
-/* 
+/*
 3.4 Date Time Picker -------------------------------------*/
 /*!
  * Datetimepicker for Bootstrap v3
@@ -1668,7 +1668,7 @@ table.tablesorter .table-col-numeric.tablesorter-header {
   .bootstrap-datetimepicker-widget.timepicker-sbs {
     width: 283px; } }
 
-/* 
+/*
 3.5 Loading Overlay -------------------------------------*/
 .overlay,
 .overlay-loading {
@@ -1709,7 +1709,7 @@ table.tablesorter .table-col-numeric.tablesorter-header {
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); }
 
-/* 
+/*
 3.6 Bootstra Multiselect -------------------------------------*/
 span.hide-native-select {
   position: relative; }
@@ -1805,24 +1805,24 @@ span.hide-native-select select {
 /*=====BEGIN LESS TRANSFER====*/
 /**
  * Bootstrap Multiselect (https://github.com/davidstutz/bootstrap-multiselect)
- * 
+ *
  * Apache License, Version 2.0:
  * Copyright (c) 2012 - 2015 David Stutz
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a
  * copy of the License at http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
  * License for the specific language governing permissions and limitations
  * under the License.
- * 
+ *
  * BSD 3-Clause License:
  * Copyright (c) 2012 - 2015 David Stutz
  * All rights reserved.
- * 
+ *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
  *    - Redistributions of source code must retain the above copyright notice,
@@ -1833,7 +1833,7 @@ span.hide-native-select select {
  *    - Neither the name of David Stutz nor the names of its contributors may be
  *      used to endorse or promote products derived from this software without
  *      specific prior written permission.
- * 
+ *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
  * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
@@ -1893,7 +1893,7 @@ span.hide-native-select select {
 li.multiselect-item.filter input.form-control.multiselect-search {
   border-right-color: #eee; }
 
-/* 
+/*
 3.7 Footable -------------------------------------*/
 .footable {
   width: 100%;
@@ -2022,7 +2022,7 @@ li.multiselect-item.filter input.form-control.multiselect-search {
 .footable-odd {
   background-color: #F7F7F7; }
 
-/* 
+/*
 3.8 New Grid -------------------------------------*/
 @media (min-width: 480px) and (max-width: 768px) {
   .col-is-1, .col-is-2, .col-is-3, .col-is-4, .col-is-5, .col-is-6, .col-is-7, .col-is-8, .col-is-9, .col-is-10, .col-is-11, .col-is-12 {
@@ -2153,7 +2153,7 @@ li.multiselect-item.filter input.form-control.multiselect-search {
   .visible-is {
     display: none !important; } }
 
-/* 
+/*
 3.9 Vertical Tabs -------------------------------------*/
 .tabs-left .nav-tabs {
   margin-right: -3px;
@@ -2184,12 +2184,12 @@ li.multiselect-item.filter input.form-control.multiselect-search {
   width: 75%;
   float: left; }
 
-/* 
+/*
 4.0 Megamenu -------------------------------------*/
 /*!
  * Yamm!3 - Yet another megamenu for Bootstrap 3
  * http://geedmo.github.com/yamm3
- * 
+ *
  * @geedmo - Licensed under the MIT license
  */
 .megamenu .nav,
@@ -2271,7 +2271,6 @@ li.multiselect-item.filter input.form-control.multiselect-search {
 1.1  Generic Elements ---------------------------*/
 body {
   background: #d8d8d8;
-  padding-top: 125px;
   padding-bottom: 60px;
   color: #333; }
   body.navbar-static {
