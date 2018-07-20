@@ -58,6 +58,12 @@
 	<script type="text/javascript" src="resources/js/mcEBIEvents.js"></script>
 	<style type="text/css">.tk-proxima-nova {
 		font-family: "proxima-nova", sans-serif;
+	}
+
+	.recallContent {
+		float: left;
+		width: 75%;
+		display: inline-block;
 	}</style>
 	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="header" src="resources/js/header.js"></script>
 </head>
@@ -206,41 +212,15 @@
 							class="auto-policy-summary__arrow"></span> </a>
 					<div class="auto-policy-summary__vehicles-drivers group" id="vehiclesDrivers1">
 						<ul class="before-sprite auto-policy-summary__vehicles">
-
-
-							<li>2012 Fiat Fiat 500
-							</li>
-
-							<li>2010 Hyundai Genesis
-							</li>
-
-
+							<li>2006 Chevrolet Impala</li>
+							<li>2010 Hyundai Genesis</li>
 						</ul>
 						<ul class="before-sprite auto-policy-summary__drivers">
-
-
-							<li>
-								LeBron
-								James
-								<br>
-
-							</li>
-
-							<li>
-								Karla
-
-								James
-								<br>
-
-							</li>
-
-
+							<li>LeBron James</li>
+							<li>Karla James</li>
 						</ul>
 					</div>
-
 				</div>
-
-
 				<div class="landing-content">
 					<div id="recalls" class="nav-options-container hidden">
 						<div class="nav-options-container__header-container">
@@ -627,14 +607,14 @@ NREUM.info = {"applicationID": "22459496", "applicationTime": 2627, "atts": "Q0R
 				var theDatas = data[index];
 				console.log(theDatas);
 				message += '<div id="recallDiv' + theDatas['userVehicleRecallId'] + '" class="nav-options__buttons group">';
-				message += 'Your ' + theDatas['year'] + ' ' + theDatas['make'] + ' ' + theDatas['model'] + ' has a recall for: ' + theDatas['reason'];
-				message += '<button id="' + theDatas['userVehicleRecallId'] + '" type="submit" onclick="acknowledgeRecall(' + theDatas['userVehicleRecallId'] + ')" class="button preferred equal-width button-right">Acknowledge</button></div>';
+				message += '<div class="recallContent">Your ' + theDatas['year'] + ' ' + theDatas['make'] + ' ' + theDatas['model'] + ' has a recall for: ' + theDatas['reason'];
+				message += '</div><button id="' + theDatas['userVehicleRecallId'] + '" type="submit" onclick="acknowledgeRecall(' + theDatas['userVehicleRecallId'] + ')" class="button preferred equal-width button-right">Acknowledge</button></div>';
 				numRecalls++;
 			});
 
 			if (message !== '') {
 				haveRecalls = numRecalls > 0;
-				message += '<a href="https://www.chevrolet.com/dealer-locator#?searchTerm=50391&searchType=postalCode" target="_blank">Find your closest dealer</a>';
+				message += '<a href="https://www.chevrolet.com/dealer-locator#?searchTerm=50391&searchType=postalCode" target="_blank">Find your nearest service center</a>';
 				$('#recallStuff').html(message);
 				$('#recalls').removeClass('hidden');
 			}
@@ -652,7 +632,6 @@ NREUM.info = {"applicationID": "22459496", "applicationTime": 2627, "atts": "Q0R
 				acknowledgedRecalls++;
 			}
 		});
-		console.log([acknowledgedRecalls, numRecalls]);
 		if (acknowledgedRecalls === numRecalls) {
 			$('#allRecalls').removeClass('hidden');
 		}
