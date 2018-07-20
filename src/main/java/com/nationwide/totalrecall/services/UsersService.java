@@ -1,4 +1,4 @@
-package com.nationwide.totalrecall.service;
+package com.nationwide.totalrecall.services;
 
 import com.nationwide.totalrecall.domain.Users;
 import com.nationwide.totalrecall.repository.IUsersRepository;
