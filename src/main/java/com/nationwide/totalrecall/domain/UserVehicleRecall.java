@@ -1,51 +1,24 @@
 package com.nationwide.totalrecall.domain;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
+@Data
 @Entity
-@Table(name = "User_Vehicle_Recall")
+@Table(name = "user_vehicle_recall")
 public class UserVehicleRecall {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 
+	@Column(name = "user_vehicle_id")
 	private Integer userVehicleId;
+
+	@Column(name = "recall_id")
+	private Integer recallId;
 
 	@ManyToOne
 	@JoinColumn(name = "status_id")
-	private Status status;
-
-	private Integer recallId;
-
-	public Status getStatus() {
-		return status;
-	}
-
-	public void setStatus(Status status) {
-		this.status = status;
-	}
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-	public Integer getUserVehicleId() {
-		return userVehicleId;
-	}
-
-	public void setUserVehicleId(Integer userVehicleId) {
-		this.userVehicleId = userVehicleId;
-	}
-
-	public Integer getRecallId() {
-		return recallId;
-	}
-
-	public void setRecallId(Integer recallId) {
-		this.recallId = recallId;
-	}
+	private Integer statusId;
 }

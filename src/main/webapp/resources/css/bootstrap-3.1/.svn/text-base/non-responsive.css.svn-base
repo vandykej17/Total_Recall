@@ -1,0 +1,139 @@
+/* 
+	Non-responsive overrides Version 1.0.2
+	
+ * Utilitze the following CSS to disable the responsive-ness of the container,
+ * grid system, and navbar.
+ */
+body {
+  padding-top: 125px; }
+
+/* Reset the container */
+.container {
+  width: 1170px !important;
+  max-width: none !important; }
+
+.container .navbar-header,
+.container .navbar-collapse {
+  margin-right: 0;
+  margin-left: 0; }
+
+/* Always float the navbar header */
+.navbar-header {
+  float: left; }
+
+/* Undo the collapsing navbar */
+.navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important; }
+
+.navbar-toggle {
+  display: none; }
+
+.navbar-collapse {
+  border-top: 0; }
+
+.navbar-brand {
+  margin-left: -15px; }
+
+/* Always apply the floated nav */
+.navbar-nav {
+  float: left;
+  margin: 0; }
+
+.navbar-nav > li {
+  float: left; }
+
+.navbar-nav > li > a {
+  padding: 15px; }
+
+/* Redeclare since we override the float above */
+.navbar-nav.navbar-right {
+  float: right; }
+
+.page-container {
+  margin: 0 auto; }
+
+.visible-xs {
+  display: none !important; }
+
+.navbar-main {
+  position: relative !important;
+  top: 0;
+  width: 100%; }
+  .navbar-main .col-xs-10 {
+    padding: 0 15px; }
+  .navbar-main .navbar-header .navbar-header-info {
+    float: left;
+    padding: 13px 13px 13px 0px; }
+  .navbar-main .navbar-header .logo {
+    padding-right: 26px; }
+
+.navbar-main {
+  border-top-width: 0px !important; }
+
+.navbar-utility .container,
+.navbar-fixed-bottom .container {
+  width: 100% !important; }
+
+.col-xs-12 {
+  width: 100% !important; }
+
+.navbar-header span.context,
+.navbar-header .context {
+  clear: none !important;
+  float: left;
+  line-height: 40px !important; }
+  .navbar-header span.context:before,
+  .navbar-header .context:before {
+    content: '|' !important;
+    padding-right: 10px !important; }
+
+.navbar-header a.brand,
+.navbar-header span.brand,
+.navbar-header .brand,
+.navbar-header .context {
+  float: left;
+  line-height: 40px !important; }
+
+.navbar-header .navbar-header-info {
+  padding: 0 !important; }
+
+.navbar-collapse .navbar-nav,
+ul.nav.navbar-nav.navbar-right.utilityLinks {
+  margin: 0px !important; }
+
+.navbar-main .navbar-nav > li > a {
+  padding: 26px 15px !important; }
+
+.modal-dialog {
+  width: 600px;
+  margin: 30px auto; }
+
+.modal-sm {
+  width: 300px; }
+
+.modal-md {
+  width: 780px; }
+
+.modal-lg {
+  width: 960px; }
+
+@media (max-width: 768px) {
+  .navbar-utility .container,
+  .navbar-main .container,
+  .navbar-fixed-bottom .container {
+    width: 970px !important; } }
+
+@media (min-width: 1200px) {
+  .navbar-utility .container,
+  .navbar-main .container,
+  .navbar-fixed-bottom .container {
+    width: 1170px !important; } }
+
+.has-error.form-group,
+.has-error .form-group,
+.has-warning.form-group,
+.has-warning .form-group {
+  border: none !important; }

@@ -1,10 +1,13 @@
 package com.nationwide.totalrecall.domain;
 
+import lombok.Data;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+@Data
 @Entity
 @Table(name = "vehiclerecalls")
 public class VehicleRecalls {
@@ -21,6 +24,8 @@ public class VehicleRecalls {
 	private String reason;
 	private String message;
 
-	@Column(name="policynumber")
+	@Column(name = "policynumber")
 	private String policyNumber;
+
+
 }
