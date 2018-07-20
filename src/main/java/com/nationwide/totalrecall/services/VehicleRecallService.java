@@ -6,6 +6,8 @@ import com.nationwide.totalrecall.repository.IVehicleRecallRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -25,7 +27,8 @@ public class VehicleRecallService {
 	}
 
 	public List<VehicleRecalls> getRecallsByPolicyNumber(String policyNumber) {
-		return vehicleRecallRepository.findAllByPolicyNumberAndMessage(policyNumber, "Unknown");
+		List<String> myList = new ArrayList<String>(Arrays.asList(policyNumber.split(",")));
+		return vehicleRecallRepository.findAllByPolicyNumberInAndMessage(myList, "Unknown");
 	}
 
 	public void updateUserVehicleRecallById(Integer vehicleRecallId, Integer statusId) {
