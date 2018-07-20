@@ -205,16 +205,15 @@
 						</div>
 						<div class="insuranceHeader" id="insuranceHeader"></div>
 						<div id="insurance">
-							<div id="headerInfo" class="alert alert-warning">You has the recall <a href="https://www.chevrolet.com/dealer-locator#?searchTerm=50391&searchType=postalCode" target="_blank">Find your closest dealer</a></div>
-
+							<div id="headerInfo" class="alert alert-warning">One or more of your vehicles has a manufacturer recall. <a href="vehicles">Click for more information</a></div>
 							<div class="nav-options-container-no-margin-top nw-gcb-dom-control">
 								<div class="nav-options-container__header-container group nw-gcb-dom-control">
 									<div class="header-container__heading">
 										<h2 class="before-sprite header-icon__autoPolicy">
 											<a href="vehicles"
-											   title="" id="Auto_PPNM1234567890">Auto Policy</a>
+											   title="" id="Auto_PPNM0064806723">Auto Policy</a>
 										</h2>
-										<span class="header-container__description"> PPNM1234567890
+										<span class="header-container__description"> PPNM0064806723
                                             </span>
 									</div>
 									<div class="header-container__secondary-info ">
@@ -226,19 +225,20 @@
 
 								<div class="clear nw-gcb-dom-control"></div>
 								<div class="nav-options__buttons group nw-gcb-dom-control">
-									<a aria-describedby="Auto_PPNM1234567890" id="idCardsDoc_PPNM1234567890" href="https://myaccount.nationwide.com/myaccount/translate/businessEvent/navigate.do?urlKey=url.docbunker&amp;pkey=PPNM1234567890&amp;linkName=idCardsDocuments&amp;isFromOriginalRequest=true"
+									<a aria-describedby="Auto_PPNM0064806723" id="idCardsDoc_PPNM0064806723" href="https://myaccount.nationwide.com/myaccount/translate/businessEvent/navigate.do?urlKey=url.docbunker&amp;pkey=PPNM0064806723&amp;linkName=idCardsDocuments&amp;isFromOriginalRequest=true"
 									   class="button-link non-preferred equal-width button-right button-margin nw-gcb-dom-control ">
 										ID Cards &amp; Documents
 									</a>
-									<a aria-describedby="Auto_PPNM1234567890" id="pkeyPPNM1234567890" href="https://myaccount.nationwide.com/myaccount/translate/businessEvent/navigate.do?urlKey=url.insurance.report.auto.claims.responsive&amp;policyNumber=PPNM1234567890&amp;firstName=LeBron&amp;lastName=James&amp;lob=A"
+									<a aria-describedby="Auto_PPNM0064806723" id="pkeyPPNM0064806723" href="https://myaccount.nationwide.com/myaccount/translate/businessEvent/navigate.do?urlKey=url.insurance.report.auto.claims.responsive&amp;policyNumber=PPNM0064806723&amp;firstName=LeBron&amp;lastName=James&amp;lob=A"
 									   class="button-link non-preferred equal-width button-right button-margin">File &amp; View Claims</a>
-									<a aria-describedby="Auto_PPNM1234567890" name="addEditVehicle" id="addEditVehicle_PPNM1234567890" href="https://myaccount.nationwide.com/myaccount/translate/businessEvent/navigate.do?urlKey=url.insurance.policy-auto-detail&amp;linkName=AddEditVehicle&amp;pkey=PPNM1234567890&amp;sid=ae47832007a840d8b4327e2d9e26c5e3&amp;referrer=myaccount"
+									<a aria-describedby="Auto_PPNM0064806723" name="addEditVehicle" id="addEditVehicle_PPNM0064806723" href="https://myaccount.nationwide.com/myaccount/translate/businessEvent/navigate.do?urlKey=url.insurance.policy-auto-detail&amp;linkName=AddEditVehicle&amp;pkey=PPNM0064806723&amp;sid=ae47832007a840d8b4327e2d9e26c5e3&amp;referrer=myaccount"
 									   class="button-link non-preferred equal-width button-right nw-gcb-dom-control button-margin">
 										Add / Edit Vehicles </a>
-									<a aria-describedby="Auto_PPNM1234567890" target="_blank" id="smartRide_PPNM1234567890" href="https://myaccount.nationwide.com/myaccount/translate/businessEvent/navigate.do?urlKey=url.insurance.smartride&amp;linkName=SmartRide&amp;referrer=myaccount&amp;agreementNumber=PPNM1234567890"
+									<a aria-describedby="Auto_PPNM0064806723" target="_blank" id="smartRide_PPNM0064806723" href="https://myaccount.nationwide.com/myaccount/translate/businessEvent/navigate.do?urlKey=url.insurance.smartride&amp;linkName=SmartRide&amp;referrer=myaccount&amp;agreementNumber=PPNM0064806723"
 									   class="button-link non-preferred equal-width button-right nw-gcb-dom-control
 					 button-margin">
 										SmartRide </a>
+									<a target="_blank" class="button-link non-preferred equal-width button-right nw-gcb-dom-control button-margin" href="vehicles">Recalls</a>
 								</div>
 								<div class="clear nw-gcb-dom-control"></div>
 							</div>
@@ -537,20 +537,6 @@
 		<div id="overlay" class="overlay"></div>
 	</div>
 </div>
-<script type="text/javascript">
-	window.NREUM || (NREUM = {});
-	NREUM.info = {
-		"applicationID": "23251200",
-		"applicationTime": 536,
-		"beacon": "bam.nr-data.net",
-		"queueTime": 0,
-		"licenseKey": "b06a1da2fa",
-		"transactionName": "bwNQbUZWVxcHARdaXlZJYU1GQk0XJwEXWl5WSWBcQEVQARAHM1xDTABdVV1Y",
-		"agent": "",
-		"errorBeacon": "bam.nr-data.net"
-	}
-</script>
-<div class="gcb-startBtnsContainer"></div>
 </body>
 
 </html>

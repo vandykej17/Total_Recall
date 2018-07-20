@@ -8,5 +8,5 @@ import java.util.List;
 
 @Transactional
 public interface IVehicleRecallRepository extends Repository<VehicleRecalls, Long> {
-	List<VehicleRecalls> findAllByPolicyNumber(String policyNumber);
+	List<VehicleRecalls> findAllByPolicyNumberAndMessage(String policyNumber, String message);
 }

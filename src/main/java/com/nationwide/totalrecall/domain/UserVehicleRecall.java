@@ -18,7 +18,7 @@ public class UserVehicleRecall {
 	@Column(name = "recall_id")
 	private Integer recallId;
 
-	@ManyToOne
+	//@ManyToOne
 	@JoinColumn(name = "status_id")
 	private Integer statusId;
 }
