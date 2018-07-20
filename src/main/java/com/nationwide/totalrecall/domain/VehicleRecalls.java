@@ -1,0 +1,24 @@
+package com.nationwide.totalrecall.domain;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "vehiclerecalls")
+public class VehicleRecalls {
+	@Id
+	@Column(name = "user_vehicle_recall_id")
+	private Integer userVehicleRecallId;
+
+	@Column(name = "Vehicle_ID")
+	private Integer vehicleId;
+
+	private String year;
+	private String make;
+	private String model;
+	private String reason;
+	private String message;
+	private String policyNumber;
+}
