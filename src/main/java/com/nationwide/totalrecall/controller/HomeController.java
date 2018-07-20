@@ -1,15 +1,20 @@
 package com.nationwide.totalrecall.controller;
 
-import com.nationwide.totalrecall.service.UsersService;
+import com.nationwide.totalrecall.services.UsersService;
+import com.nationwide.totalrecall.services.VehicleRecallService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController extends BaseController {
 	@Autowired
 	UsersService userService;
+
+	@Autowired
+	VehicleRecallService vehicleRecallService;
 
 	@GetMapping("/")
 	public ModelAndView index() {
@@ -27,5 +32,13 @@ public class HomeController extends BaseController {
 	@GetMapping("/vehicles")
 	public String vehicles() {
 		return "vehicles";
+	}
+
+	@GetMapping("/getRecalls/{policyNumber}")
+	public ModelAndView getRecallsByPolicyNumber(@PathVariable(name = "policyNumber") String policyNumber) {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("Recalls", vehicleRecallService.getRecallsByPolicyNumber(policyNumber));
+		mav.setViewName("recalls");
+		return mav;
 	}
 }
