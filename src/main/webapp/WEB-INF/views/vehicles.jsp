@@ -614,7 +614,7 @@ NREUM.info = {"applicationID": "22459496", "applicationTime": 2627, "atts": "Q0R
 
 			if (message !== '') {
 				haveRecalls = numRecalls > 0;
-				message += '<a href="https://www.chevrolet.com/dealer-locator#?searchTerm=50391&searchType=postalCode" target="_blank">Find your closest dealer</a>';
+				message += '<a href="https://www.chevrolet.com/dealer-locator#?searchTerm=50391&searchType=postalCode" target="_blank">Find your nearest service center</a>';
 				$('#recallStuff').html(message);
 				$('#recalls').removeClass('hidden');
 			}
@@ -632,7 +632,6 @@ NREUM.info = {"applicationID": "22459496", "applicationTime": 2627, "atts": "Q0R
 				acknowledgedRecalls++;
 			}
 		});
-		console.log([acknowledgedRecalls, numRecalls]);
 		if (acknowledgedRecalls === numRecalls) {
 			$('#allRecalls').removeClass('hidden');
 		}
