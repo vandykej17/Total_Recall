@@ -1,0 +1,266 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS file within this directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the top of the
+* compiled file, but it's generally better to create a new file per style scope.
+*
+*/
+.inline {
+    display: inline;
+}
+
+.modal-open .modal {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+
+@media print {
+    a[href]:after {
+        content: "";
+    }
+
+    body {
+        padding-top: 0px !important
+    }
+
+    .navbar-fixed-top {
+        display: none !important;
+    }
+
+    .tabcollapse-container .hidden-xs {
+        display: block !important;
+    }
+
+    .tabcollapse-container .visible-xs {
+        display: none !important;
+    }
+
+    .tabcollapse-container .nav-tabs {
+        display: none !important;
+    }
+}
+
+.table-col-6 {
+    width: 50% !important;
+}
+
+.table-col-4 {
+    width: 33.33333333333333% !important;
+}
+
+table.table-no-border, table.table-no-border tbody tr td, table.table-no-border tbody tr {
+    border: none !important;
+}
+
+.header-font-style {
+    font-weight: normal !important;
+    margin: 5px !important;
+    color: #02385A;
+}
+
+.header-font-style.bold {
+    font-weight: normal !important;
+    margin: 5px !important;
+    color: #02385A;
+    font-weight: bold !important;
+}
+
+.panel-group .panel-neutral,
+.panel-group .panel-default .panel-default {
+    margin-bottom: 17px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.panel-group .panel-neutral > .panel-heading,
+.panel-group .panel-default .panel-default > .panel-heading:not(.collapsible) {
+    padding: 10px 15px;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.panel-group .panel-neutral > .panel-heading {
+    background: #e4e4e4;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.panel-group .panel-default .panel-default > .panel-heading {
+    background: #d3e4f0;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.panel-group .panel-neutral > .panel-body,
+.panel-group .panel-default .panel-default > .panel-body {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    border: 0 none !important;
+}
+
+.loading-container {
+    background-color: #fff;
+    position: relative;
+    height: 140px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.loading-container .spinner {
+    top: 30% !important;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.custom-file-upload {
+    display: block;
+    width: auto;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.custom-file-upload label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.file-upload-wrapper {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.file-upload-input {
+    /*width: 300px;*/
+    /*color: #fff;*/
+    /*font-size: 12px;*/
+    /*padding: 11px 17px;*/
+    /*border: none;*/
+    /*background-color: #005691;*/
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    float: left;
+    /* IE 9 Fix */
+}
+
+.file-upload-input:hover,
+.file-upload-input:focus {
+    /*background-color: #005691;*/
+    outline: none;
+}
+
+.file-upload-button {
+. btn;
+    cursor: pointer;
+    display: inline-block;
+    /*color: #fff;*/
+    /*font-size: 16px;*/
+    /*text-transform: uppercase;*/
+    /*padding: 11px 20px;*/
+    /*border: none;*/
+    /*margin-left: -1px;*/
+    /*background-color: #005691;*/
+    float: left;
+    /* IE 9 Fix */
+
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.file-upload-button:hover {
+    background-color: #005691;
+}
+
+.has-error .section {
+    border: solid #B71234 1px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    margin-bottom: 0px;
+}
+
+.has-error .form-group {
+    margin-bottom: 0px;
+}
+
+.text-lg .text-sm {
+    font-size: 75%;
+    margin-top: .38em;
+}
+
+.text-lg input[type="checkbox"] {
+    margin-top: .25em !important;
+}
+
+.list-group-item .form-group:last-child {
+    margin-bottom: 10px;
+}
+
+.form-control-static {
+    min-height: 31px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 0;
+}
+
+hr.secondary {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.list-group-item.status-inactive {
+    border-color: #E6E6E6;
+}
+
+.list-group-item.status-inactive .text-lg, .list-group-item.status-inactive img, .list-group-item.status-inactive ul, .list-group-item.status-inactive hr {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    opacity: 0.6;
+}
+
+#sysSupportModal .modal-body .tab-content {
+    border: 1px solid #bebebe;
+    padding: 15px;
+}
+
+.list-group-item.status-inactive {
+    border-color: #E6E6E6;
+}
+
+.list-group-item.status-inactive .text-lg, .list-group-item.status-inactive img, .list-group-item.status-inactive ul, .list-group-item.status-inactive hr {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    opacity: 0.6;
+}
+
+.badge.critical {
+    background-color: #ff0000;
+}
+
+.badge.active {
+    background-color: #005691;
+}
+
+.table-word-wrap {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table-word-wrap .wrapping, .table-word-wrap.wrapping {
+    word-wrap: break-word;
+}
+
+.list-group.list-group-results .list-group-item.active {
+    background-color: #b5dbf4;
+    color: #000;
+    text-shadow: none;
+    border-color: #A6C4D9;
+}

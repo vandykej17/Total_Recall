@@ -34,4 +34,9 @@ public class HomeController extends BaseController {
 		return "vehicles";
 	}
 
+	@GetMapping("/inquiry")
+	public String inquiry() {
+		return "inquiry";
+	}
+
 }
