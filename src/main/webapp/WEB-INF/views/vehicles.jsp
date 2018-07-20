@@ -212,41 +212,15 @@
 							class="auto-policy-summary__arrow"></span> </a>
 					<div class="auto-policy-summary__vehicles-drivers group" id="vehiclesDrivers1">
 						<ul class="before-sprite auto-policy-summary__vehicles">
-
-
-							<li>2012 Fiat Fiat 500
-							</li>
-
-							<li>2010 Hyundai Genesis
-							</li>
-
-
+							<li>2006 Chevrolet Impala</li>
+							<li>2010 Hyundai Genesis</li>
 						</ul>
 						<ul class="before-sprite auto-policy-summary__drivers">
-
-
-							<li>
-								LeBron
-								James
-								<br>
-
-							</li>
-
-							<li>
-								Karla
-
-								James
-								<br>
-
-							</li>
-
-
+							<li>LeBron James</li>
+							<li>Karla James</li>
 						</ul>
 					</div>
-
 				</div>
-
-
 				<div class="landing-content">
 					<div id="recalls" class="nav-options-container hidden">
 						<div class="nav-options-container__header-container">
