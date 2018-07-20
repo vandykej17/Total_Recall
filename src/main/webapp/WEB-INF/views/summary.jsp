@@ -98,7 +98,7 @@
 	<div id="navigationAlertContainer"></div>
 	<div class="outer-container">
 		<nav class="mobile-navigation hide-navigation-bar" id="mobile-navigation-cam" role="navigation">
-			<a id="mobileAllAccounts" class="mobile-navigation-home" href="https://myaccount.nationwide.com/myaccount/portfolio/RetrievePortfolio.action?gn=1">All Accounts</a>
+			<a id="mobileAllAccounts" class="mobile-navigation-home" href="/">All Accounts</a>
 			<ul class="secondary-navigation__primary">
 				<li>
 					<a id="mobileContactUs" href="https://myaccount.nationwide.com/myaccount/portfolio/RetrieveContactDirectory.action?gn=1">Contact Us</a>

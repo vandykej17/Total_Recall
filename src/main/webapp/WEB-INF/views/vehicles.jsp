@@ -24,38 +24,6 @@
 	<link href="resources/css/screen.css" rel="stylesheet" type="text/css" media="print,screen">
 	<link href="resources/css/print.css" rel="stylesheet" type="text/css" media="print">
 	<meta name="userType" content="[PNO]">
-	<script type="text/javascript" src="resources/js/modernizr-2.7.1.min.js"></script>
-	<script type="text/javascript" src="resources/js/jquery.custom.functions.js"></script>
-	<script type="text/javascript" src="resources/js/forms.js"></script>
-	<script type="text/javascript" src="resources/js/toggler.jquery.js"></script>
-	<script type="text/javascript" src="resources/js/owl.carousel.js"></script>
-	<script type="text/javascript" src="resources/js/coverages-picker.jquery.js"></script>
-	<script type="text/javascript" src="resources/js/tabs.js"></script>
-	<script type="text/javascript" src="resources/js/wait-cancel.js"></script>
-	<script type="text/javascript" src="resources/js/edit-history.jquery.js"></script>
-	<script type="text/javascript" src="resources/js/editCoverages.js"></script>
-	<script type="text/javascript" src="resources/js/inline-help.js"></script>
-	<script type="text/javascript" src="resources/js/persist.min.js"></script>
-	<script type="text/javascript" src="resources/js/propertyCoveragesEBI.js"></script>
-	<script type="text/javascript" src="resources/js/accordion.js"></script>
-	<script type="text/javascript" src="resources/js/nwjs.global.js"></script>
-	<script type="text/javascript" src="resources/js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="resources/js/ip.js"></script>
-	<script type="text/javascript" src="resources/js/nwjs.coverages.js"></script>
-	<script type="text/javascript" src="resources/js/jquery-ui-1.11.4.custom.c2chat.min.js"></script>
-	<script type="text/javascript" src="resources/js/moment.min.js"></script>
-	<script type="text/javascript" src="resources/js/moment-timezone-with-data.min.js"></script>
-	<script type="text/javascript" src="resources/js/jquery.ui.touch-punch.min.js"></script>
-	<script type="text/javascript" src="resources/js/matchMedia.min.js"></script>
-	<script type="text/javascript" src="resources/js/matchMedia.addListener.min.js"></script>
-	<script type="text/javascript" src="resources/js/billingCommon.js"></script>
-	<script type="text/javascript" src="resources/js/billsAndPayments.js"></script>
-	<script type="text/javascript" src="resources/js/enquire-2.1.0.min.js"></script>
-	<script type="text/javascript" src="resources/js/rvOverview.js"></script>
-	<script type="text/javascript" src="resources/js/rvEBIEvents.js"></script>
-	<script type="text/javascript" src="resources/js/boatOverview.js"></script>
-	<script type="text/javascript" src="resources/js/boatEBIEvents.js"></script>
-	<script type="text/javascript" src="resources/js/mcEBIEvents.js"></script>
 	<style type="text/css">.tk-proxima-nova {
 		font-family: "proxima-nova", sans-serif;
 	}
@@ -146,53 +114,13 @@
 			<![endif]--></div>
 		<div class="breadcrumb breadcrumb--top" id="breadcrumb_top">
 
-			<a id="anchor_home" class="icon-sprite breadcrumb__home" href="https://myaccount.nationwide.com/myaccount/index.jsp"><span>All
-		Accounts</span>
+			<a id="anchor_home" class="icon-sprite breadcrumb__home" href="/"><span>All Accounts</span>
 			</a>
 			<span class="breadcrumb__caret"></span>
 			<strong id="anchor_value">Auto Policy</strong>
-			<!-- <a id="anchor_home" class="icon-sprite breadcrumb__home" href="#"><span>All Accounts</span></a> <span class="breadcrumb__caret"></span> <strong id="anchor_value">Auto Policy</strong> -->
-
 		</div>
 		<div id="bodyContent">
-
-
-			<script type="text/javascript">
-				var m_form = "policyOverview";
-
-				var billingDetailsUrl = "billsAndPayments.action?pkey=PPNM0064806723&amp;bkey=7271234567";
-
-				var billsAndPaymentsKillSwitchFlag = "false";
-
-				var c2cPageName = "policyOverview.action";
-
-				function submitFormWithFormActionForAutoPolicy(button, form, e) {
-					e.preventDefault();
-					var formId = form.getAttribute('id');
-					var formAction = button.getAttribute('formAction');
-					$('#' + formId).attr("action", formAction);
-					$('#' + formId).submit();
-
-				}
-			</script>
-
 			<title>Auto Summary</title>
-
-			<form id="policyOverview" name="policyOverview" action="https://servicing.nationwide.com/policyservicing/policyOverview.action" method="post">
-				<input type="hidden" name="manualBindReasons" value="DELAYED_QUOTE_STATE" id="policyOverview_manualBindReasons">
-				<input type="hidden" name="driverID" value="" id="policyOverview_driverID">
-				<input type="hidden" name="vehicleID" value="" id="policyOverview_vehicleID">
-				<input type="hidden" name="requestedNavItem.action" value="" id="policyOverview_requestedNavItem_action">
-				<input type="hidden" name="requestedNavItem.entity" value="" id="policyOverview_requestedNavItem_entity">
-				<input type="hidden" name="requestedNavItem.itemDescription" value="" id="policyOverview_requestedNavItem_itemDescription">
-				<input type="hidden" name="requestedNavItem.originalEntityId" value="" id="policyOverview_requestedNavItem_originalEntityId">
-				<input type="hidden" name="cma" value="" id="policyOverview_cma">
-				<input type="hidden" name="cmaKeyArray" value="" id="policyOverview_cmaKeyArray">
-				<input type="hidden" name="cmaValArray" value="" id="policyOverview_cmaValArray">
-				<input type="hidden" name="entryPoint" value="" id="policyOverview_entryPoint">
-				<input type="hidden" name="selectedScenario" value="" id="selectedScenario">
-			</form>
-
 
 			<div class="inner-container group" id="skip-main-content" role="main">
 				<h1 id="heading">Auto Policy</h1>
@@ -230,6 +158,9 @@
 							</div>
 						</div>
 						<div class="clear"></div>
+						<div class="nav-options-container__content group">
+							<div class="nav-options__buttons group"><a href="child">Have a child safety seat?</a></div>
+						</div>
 						<div class="nav-options-container__content group">
 							<div id="allRecalls" class="nav-options__buttons group hidden">You have no more recalls.</div>
 							<div id="recallStuff" class="nav-options__buttons group"></div>
@@ -525,7 +456,7 @@
 
 
 	<nav id="mobile-navigation-auto" class="mobile-navigation" role="navigation">
-		<a name="mobile_allAccount" class="mobile-navigation-home" href="javascript:ctmForInteractivePolicy(&#39;https://myaccount.nationwide.com/myaccount/index.jsp&#39;);">All Accounts</a>
+		<a name="mobile_allAccount" class="mobile-navigation-home" href="/">All Accounts</a>
 
 
 		<ul class="secondary-navigation__contact">
@@ -605,7 +536,6 @@ NREUM.info = {"applicationID": "22459496", "applicationTime": 2627, "atts": "Q0R
 			var message = '';
 			$.each(data, function (index, value) {
 				var theDatas = data[index];
-				console.log(theDatas);
 				message += '<div id="recallDiv' + theDatas['userVehicleRecallId'] + '" class="nav-options__buttons group">';
 				message += '<div class="recallContent">Your ' + theDatas['year'] + ' ' + theDatas['make'] + ' ' + theDatas['model'] + ' has a recall for: ' + theDatas['reason'];
 				message += '</div><button id="' + theDatas['userVehicleRecallId'] + '" type="submit" onclick="acknowledgeRecall(' + theDatas['userVehicleRecallId'] + ')" class="button preferred equal-width button-right">Acknowledge</button></div>';

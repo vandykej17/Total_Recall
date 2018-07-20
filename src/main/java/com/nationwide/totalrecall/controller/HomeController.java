@@ -33,4 +33,9 @@ public class HomeController extends BaseController {
 	public String email() {
 		return "email";
 	}
+
+	@GetMapping("/child")
+	public String child() {
+		return "child";
+	}
 }
